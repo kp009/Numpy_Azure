@@ -20,7 +20,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://numpydjangoapp.azurestaticapps.net'
+    'https://numpy-azure-app-byg5grfahhckcdfe.canadacentral-01.azurewebsites.net'
 ]
 
 STORAGES = {
