@@ -29,7 +29,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "localhost",
     "b0a8-50-35-50-35.ngrok-free.app",  # Add your ngrok URL here
-    "numpydjangoapp.azurewebsites.net"
+    "numpy-azure-app-byg5grfahhckcdfe.canadacentral-01.azurewebsites.net"
 ]
 #ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -41,7 +41,7 @@ CORS_ALLOWED_ORIGINS = (
     'http://localhost:3000',
     'https://b0a8-50-35-50-35.ngrok-free.app',
     'http://127.0.0.1:8000',
-    'https://numpydjangoapp.azurewebsites.net'
+    'https://numpy-azure-app-byg5grfahhckcdfe.canadacentral-01.azurewebsites.net'
 )
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

@@ -19,6 +19,6 @@ from django.core.wsgi import get_wsgi_application
 #     load_dotenv(".env.development")
 settings_module = 'statisticpro.deployment' if 'WEBSITE_HOSTNAME' in os.environ else 'statisticpro.settings'
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'statisticpro.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', settings_module)
 
 application = get_wsgi_application()
