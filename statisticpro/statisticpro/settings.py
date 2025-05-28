@@ -65,7 +65,7 @@ DATABASES = {
         'NAME': 'MySQL',   # Replace with your MySQL database name
         'USER': 'root',        # Replace with your MySQL username
         'PASSWORD': 'MySql@123',
-        'HOST': 'localhost',            # Use '127.0.0.1' if MySQL runs locally
+        'HOST': '127.0.0.1',            # Use '127.0.0.1' if MySQL runs locally
         'PORT': '3306',                 # Default MySQL port
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
