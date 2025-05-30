@@ -52,7 +52,7 @@ jobs:
         with:
           name: python-app
           path: |
-            statisticpro/release.zip
+            release.zip
             !venv/
 
   deploy:
