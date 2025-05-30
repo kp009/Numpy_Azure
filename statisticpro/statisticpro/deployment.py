@@ -37,17 +37,32 @@ CONNECTION = os.environ['AZURE_MYSQL_CONNECTIONSTRING']
 # Example: "host=mydb.mysql.database.azure.com dbname=mydb user=myuser password=mypassword"
 CONNECTION_STR = {pair.split('=')[0]: pair.split('=')[1] for pair in CONNECTION.split(' ')}
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': CONNECTION_STR['dbname'],
+#         'USER': CONNECTION_STR['user'],
+#         'PASSWORD': CONNECTION_STR['password'],
+#         'HOST': CONNECTION_STR['host'],
+#         'PORT': '3306',
+#         'OPTIONS': {
+#             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+#         },
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': CONNECTION_STR['dbname'],
-        'USER': CONNECTION_STR['user'],
-        'PASSWORD': CONNECTION_STR['password'],
-        'HOST': CONNECTION_STR['host'],
+        'NAME': 'numpy-azure-database',
+        'USER': 'buljwpmcet',
+        'PASSWORD': 'Y9Jhzm0l0z$eH$Se',
+        'HOST': 'numpy-azure-database.mysql.database.azure.com',
         'PORT': '3306',
         'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        },
+            'ssl': {'ca': '/path/to/BaltimoreCyberTrustRoot.crt.pem'},  # optional but recommended
+        }
     }
 }
+
 STATIC_ROOT = BASE_DIR/'staticfiles'
