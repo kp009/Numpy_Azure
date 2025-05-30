@@ -32,10 +32,10 @@ STORAGES = {
     },
 }
 
-# Get MySQL connection string from Azure
-CONNECTION = os.environ['AZURE_MYSQL_CONNECTIONSTRING']
-# Example: "host=mydb.mysql.database.azure.com dbname=mydb user=myuser password=mypassword"
-CONNECTION_STR = {pair.split('=')[0]: pair.split('=')[1] for pair in CONNECTION.split(' ')}
+# # Get MySQL connection string from Azure
+# CONNECTION = os.environ['AZURE_MYSQL_CONNECTIONSTRING']
+# # Example: "host=mydb.mysql.database.azure.com dbname=mydb user=myuser password=mypassword"
+# CONNECTION_STR = {pair.split('=')[0]: pair.split('=')[1] for pair in CONNECTION.split(' ')}
 
 # DATABASES = {
 #     'default': {
